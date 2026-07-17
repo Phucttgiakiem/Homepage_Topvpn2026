@@ -1,0 +1,412 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #2563EB;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 1px solid #F8FAFC;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav a {
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #2563EB;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1E40AF;
+}
+
+.btn-secondary {
+  background: #FFFFFF;
+  color: #2563EB;
+  border: 2px solid #2563EB;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding: 64px 32px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 580px;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-illustration {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-illustration img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.illustration-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  background: #F8FAFC;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+  font-weight: 600;
+}
+
+/* VPN Services */
+.vpn-services {
+  padding: 64px 32px;
+}
+
+.vpn-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #F8FAFC;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 55px;
+  background: #F8FAFC;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+}
+
+.rating {
+  color: #22C55E;
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Comparison Table */
+.comparison {
+  padding: 64px 32px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+th {
+  background: #F8FAFC;
+  padding: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+td {
+  padding: 16px;
+  text-align: center;
+}
+
+tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #F1F5F9;
+}
+
+tbody tr:hover {
+  background: #F8FAFC;
+}
+
+/* Trust Section */
+.trust {
+  padding: 64px 32px;
+}
+
+.trust-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.trust .card {
+  text-align: center;
+  font-weight: 600;
+  padding: 24px;
+}
+
+/* Guides */
+.guides {
+  padding: 64px 32px;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* FAQ */
+.faq {
+  padding: 64px 32px;
+}
+
+details {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #F8FAFC;
+  border-radius: 12px;
+  background: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+  background: #1F2937;
+  color: #FFFFFF;
+  padding: 48px 32px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.footer h4 {
+  margin-bottom: 12px;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #9CA3AF;
+}
+
+/* Responsive */
+/* Tablet (iPad) adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Header stays horizontal but with more spacing */
+  .header {
+    flex-wrap: wrap;
+    padding: 24px;
+  }
+  .nav a {
+    margin: 0 8px;
+  }
+
+  /* Hero section: stack text and illustration side by side but tighter */
+  .hero {
+    flex-direction: row;
+    gap: 24px;
+    padding: 48px 24px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .illustration-placeholder {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  /* VPN cards: show 2 per row instead of 3 */
+  .vpn-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Comparison table: allow horizontal scroll if too wide */
+  .comparison table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Trust cards: 2 per row */
+  .trust-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Guides: 2 per row */
+  .guide-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer: columns stack into 2 per row */
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #FFFFFF;
+    padding: 16px;
+    border-top: 1px solid #F8FAFC;
+    width: 100%;
+  }
+  .menu-toggle:checked + .hamburger + .nav {
+    display: flex; /* show nav when toggled */
+  }
+  .hamburger {
+    display: block;
+  }
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* CTA inside dropdown */
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 48px 24px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-illustration img {
+    max-width: 360px;
+  }
+}
